@@ -1,0 +1,35 @@
+:root{--bg:#fff;--fg:#1d1b26;--muted:#5d5870;--card:#f7f4fb;--line:#e6e0ef;--accent:#d6336c;--accent2:#7048e8}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.6;color:var(--fg);background:var(--bg)}
+a{color:var(--accent2)}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.2em;color:var(--fg);text-decoration:none}
+.brand img{width:40px;height:40px;border-radius:9px}
+nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+nav a{color:var(--fg);text-decoration:none;font-size:.95em}
+nav a:hover{color:var(--accent)}
+.hero{background:linear-gradient(135deg,#2b1640,#7a1f5c 60%,#e8590c);color:#fff;padding:56px 0}
+.hero .wrap{display:flex;align-items:center;gap:32px;flex-wrap:wrap}
+.hero img{width:160px;height:160px;border-radius:32px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.hero h1{font-size:2.2em;line-height:1.2;margin:0 0 12px}
+.hero p{margin:0 0 20px;max-width:560px;opacity:.95}
+.hero .text{flex:1;min-width:260px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;background:#fff;color:#2b1640;font-weight:600;text-decoration:none;margin:0 8px 8px 0}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.7)}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+section h2{margin:0 0 8px;font-size:1.6em}
+.lead{color:var(--muted);margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.card h3{margin:0 0 6px;font-size:1.05em}
+.card p{margin:0;color:var(--muted)}
+.step{font-weight:700;color:var(--accent)}
+details{border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
+summary{font-weight:600;cursor:pointer}
+main.doc{max-width:720px;margin:0 auto;padding:32px 16px}
+code{background:#f2f2f2;padding:8px;display:block;word-break:break-all}
+footer{padding:28px 0;color:var(--muted);font-size:.9em}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+footer a{color:var(--muted);margin-right:16px}
